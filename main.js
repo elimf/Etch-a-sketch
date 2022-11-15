@@ -59,6 +59,7 @@ function reloadGrid() {
 
 function clearGrid() {
   grid.innerHTML = "";
+  setCurrentMode("color") ;
 }
 
 function setupGrid(size) {
@@ -135,7 +136,6 @@ function refreshSwatch() {
     hex = hexFromRGB(red, green, blue);
   $("#swatch").css("background-color", "#" + hex);
   setCurrentColor("#" + hex);
-  console.log("red" + red + "green" + green + "blue" + blue);
   $("#redValue").text("Red: " + red);
   $("#greenValue").text("Green: " + green);
   $("#blueValue").text("Blue: " + blue);

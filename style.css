@@ -1,18 +1,4 @@
-/* * {
-  background-color: bisque;
-}
-header {
-  text-align: center;
-}
-.container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-}
-.box {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5%;
-} */
+
 :root {
   --primary-dark: #333;
   --primary-light: #ededed;
@@ -99,15 +85,11 @@ button.active {
   color: var(--primary-light);
 }
 
-button,
-input[type="color"] {
-  transition: transform 0.1s ease-in-out;
+#rainbowBtn.active{
+background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
 }
 
-button:hover,
-input[type="color"]:hover {
-  transform: scale(1.05);
-}
+
 
 .size-value {
   margin-bottom: -20px;
@@ -188,14 +170,11 @@ input[type="range"]::-webkit-slider-thumb {
 #red,
 #green,
 #blue {
-  float: left;
-  clear: left;
   width: 255px;
 }
 #swatch {
-  width: 120px;
-  height: 120px;
-  margin-top: 18px;
+  width: 100px;
+  height: 100px;
   background-image: none;
   border-radius: 50%;
 }
@@ -217,3 +196,4 @@ input[type="range"]::-webkit-slider-thumb {
 #blue .ui-slider-handle {
   border-color: #729fcf;
 }
+
